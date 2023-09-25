@@ -151,7 +151,7 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title">QUẢN LÝ CỬA HÀNG</li>
+                        <li class="menu-title">QUẢN LÝ TOUR DU LỊCH</li>
 
                         <li>
                             <a href="<?php echo base_url('admin/'); ?>" class="waves-effect"><i class='bx bx-home-smile'></i><span class="badge badge-pill badge-primary float-right"></span><span>Trang Chủ</span></a>
@@ -185,11 +185,11 @@
                         </li>
 
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="bx bxs-truck"></i><span>Nhà Cung Cấp</span></a>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="bx bxs-map"></i><span>Địa Điểm</span></a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="<?php echo base_url('admin/nha-cung-cap/'); ?>">Danh Sách</a></li>
-                                <li><a href="<?php echo base_url('admin/nha-cung-cap/them/'); ?>">Thêm Mới</a></li>
-                                <li><a href="<?php echo base_url('admin/nha-cung-cap/thung-rac/'); ?>">Thùng Rác</a>
+                                <li><a href="<?php echo base_url('admin/dia-diem/'); ?>">Danh Sách</a></li>
+                                <li><a href="<?php echo base_url('admin/dia-diem/them/'); ?>">Thêm Mới</a></li>
+                                <li><a href="<?php echo base_url('admin/dia-diem/thung-rac/'); ?>">Thùng Rác</a>
                             </ul>
                         </li>
 

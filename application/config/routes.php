@@ -58,6 +58,19 @@ $route['admin/chuyen-muc/thung-rac/xoa/(:any)'] = 'Admin/ChuyenMuc/delete/$1';
 $route['admin/chuyen-muc/thung-rac/xoa'] = 'Admin/ChuyenMuc/deleteAll/$1';
 
 
+//Route admin location
+$route['admin/dia-diem/them'] = 'Admin/DiaDiem/Add';
+$route['admin/dia-diem'] = 'Admin/DiaDiem/index';
+$route['admin/dia-diem/trang/(:any)'] = 'Admin/DiaDiem/Page/$1';
+$route['admin/dia-diem/sua/(:any)'] = 'Admin/DiaDiem/Update/$1';
+$route['admin/dia-diem/them-thung-rac/(:any)'] = 'Admin/DiaDiem/remove/$1';
+$route['admin/dia-diem/thung-rac'] = 'Admin/DiaDiem/trash';
+$route['admin/dia-diem/thung-rac/trang/(:any)'] = 'Admin/DiaDiem/PageTrash/$1';
+$route['admin/dia-diem/thung-rac/khoi-phuc/(:any)'] = 'Admin/DiaDiem/reset/$1';
+$route['admin/dia-diem/thung-rac/khoi-phuc'] = 'Admin/DiaDiem/resetAll';
+$route['admin/dia-diem/thung-rac/xoa/(:any)'] = 'Admin/DiaDiem/delete/$1';
+$route['admin/dia-diem/thung-rac/xoa'] = 'Admin/DiaDiem/deleteAll/$1';
+
 //Route login
 $route['dang-nhap'] = 'Website/DangNhap/Login';
 $route['dang-xuat'] = 'Website/DangXuat';
