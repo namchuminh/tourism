@@ -21,6 +21,16 @@ class Model_TrangChu extends CI_Model {
 		return $this->db->query("SELECT chuyendi.*, diemden.TenDiemDen FROM chuyendi, diemden WHERE chuyendi.MaDiemDen = diemden.MaDiemDen AND chuyendi.TrangThai = 1")->result_array();
 	}
 
+	public function resultViewTicket($MaTimKiem){
+		$sql = "SELECT datve.*, chuyendi.* FROM datve, chuyendi WHERE datve.MaChuyenDi = chuyendi.MaChuyenDi AND datve.MaTimKiem = ?";
+		$result = $this->db->query($sql, array($MaTimKiem));
+		return $result->result_array();
+	}
+
+	public function getLocationById($madiemden){
+		return $this->db->query("SELECT * FROM diemden WHERE TrangThai = 1 AND MaDiemDen = ?", array($madiemden))->result_array();
+	}
+
 }
 
 /* End of file Model_TrangChu.php */

@@ -45,7 +45,29 @@ class TrangChu extends CI_Controller {
 			$data['list'] = $this->Model_DiemDen->search($timkiem);
 			return $this->load->view('Website/View_TimKiemDiemDen', $data);
 		}
-
 		
 	}
+
+	public function ViewTicket()
+	{
+		$data['title'] = "Tra cứu thông tin vé được đặt!";
+		return $this->load->view('Website/View_TraCuuVe', $data);
+	}
+
+	public function ResultViewTicket()
+	{
+		$mavedat = strtoupper($this->input->get('code'));
+		$detail = $this->Model_TrangChu->resultViewTicket($mavedat);
+
+		if(count($detail) == 0){
+			$data['title'] = "Thông tin tra cứu vé được đặt!";
+			$data['error'] = "Không tìm thấy thông tin vé đã được đặt!";
+			return $this->load->view('Website/View_TraCuuVe', $data);
+		}
+
+		$data['title'] = "Thông tin tra cứu vé được đặt!";
+		$data['detail'] = $detail;
+		return $this->load->view('Website/View_KetQuaTraCuuVe', $data);
+	}
+
 }

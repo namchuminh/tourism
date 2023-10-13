@@ -13,6 +13,8 @@ $route['tin-tuc/(:any)'] = 'Website/TinTuc/Detail/$1';
 $route['tin-tuc/trang/(:any)'] = 'Website/TinTuc/Page/$1';
 
 $route['tim-kiem'] = 'TrangChu/Search';
+$route['tra-cuu-ve'] = 'TrangChu/ViewTicket';
+$route['tra-cuu-ve/ket-qua'] = 'TrangChu/ResultViewTicket';
 
 
 $route['tour-du-lich'] = 'Website/ChuyenDi/index';

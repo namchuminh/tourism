@@ -110,10 +110,16 @@
                             Tin Tức
                             </a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="<?php echo base_url('tra-cuu-ve/'); ?>">
+                            Tra Cứu
+                            </a>
+                        </li>
                         </ul>
                     </div>
                     <!-- menu bomile -->
                     <!-- mobile -->
+
                     <div class="menu__mobile">
                         <ul class="main__menu__mobile">
                             <li class="sub__menu__mobile">
@@ -130,17 +136,19 @@
                                 </ul>
                             </li>
                             <li class="sub__menu__mobile">
-                                <a class="menu__title__mobile" href="<?php echo base_url('dia-diem/'); ?>">Điểm Du Lịch</a>
+                                <a href="<?php echo base_url('dia-diem/'); ?>" class="menu__title__mobile">Điểm Du Lịch </a>
                             </li>
                             <li class="sub__menu__mobile">
-                                <a class="menu__title__mobile" href="<?php echo base_url('tour-du-lich/'); ?>">Tour Du Lịch</a>
+                                <a class="menu__title__mobile" href="<?php echo base_url('tour-du-lich/'); ?>">Tour Du Lịch </a>
                             </li>
                             <li class="sub__menu__mobile">
-                                <a  class="menu__title__mobile" href="<?php echo base_url('tin-tuc/'); ?>">Tin Tức</a>
+                                <a class="menu__title__mobile" href="<?php echo base_url('tin-tuc/'); ?>">Tin Tức</a>
+                            </li>
+                            <li class="sub__menu__mobile">
+                                <a class="menu__title__mobile" href="<?php echo base_url('tra-cuu-ve/'); ?>">Tra Cứu</a>
                             </li>
                         </ul>
                     </div>
-
                     
                     <!-- end  -->
                     <div class="btn-box-search">

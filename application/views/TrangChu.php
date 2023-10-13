@@ -121,6 +121,9 @@
                             Tin Tức
                             </a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle" href="<?php echo base_url('tra-cuu-ve/'); ?>">Tra Cứu</a>
+                        </li>
                         </ul>
                     </div>
                     <!-- menu bomile -->
@@ -128,7 +131,7 @@
                     <div class="menu__mobile">
                         <ul class="main__menu__mobile">
                             <li class="sub__menu__mobile">
-                                <a href="../Index.html" class="menu__title__mobile">Home</a>
+                                <a href="<?php echo base_url(); ?>" class="menu__title__mobile">Trang Chủ</a>
                             </li>
                             <li class="sub__menu__mobile">
                                 <a class="menu__title__mobile">Pages <i class="fa-solid fa-angle-down"></i></a>
@@ -141,25 +144,16 @@
                                 </ul>
                             </li>
                             <li class="sub__menu__mobile">
-                                <a  class="menu__title__mobile">Destinations <i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="dropdown__menu__mobile">
-                                    <li><a href="./ListDestinations.html">Destinations List</a></li>
-                                    <li><a href="./ItemsDestintion.html">Destinations Items</a></li>
-                                </ul>
+                                <a href="<?php echo base_url('dia-diem/'); ?>" class="menu__title__mobile">Điểm Du Lịch</a>
                             </li>
                             <li class="sub__menu__mobile">
-                                <a class="menu__title__mobile">Tour <i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="dropdown__menu__mobile">
-                                    <li><a href="./ListTour.html">Tour List</a></li>
-                                    <li><a href="./ItemsTour.html">Tour Items</a></li>
-                                </ul>
+                                <a class="menu__title__mobile" href="<?php echo base_url('tour-du-lich/'); ?>">Tour Du Lịch</a>
                             </li>
                             <li class="sub__menu__mobile">
-                                <a  class="menu__title__mobile">Blog <i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="dropdown__menu__mobile">
-                                    <li><a href="./ListBlog.html">Blog List</a></li>
-                                    <li><a href="./ItemsBlog.html">Blog Items</a></li>
-                                </ul>
+                                <a class="menu__title__mobile" href="<?php echo base_url('tin-tuc/'); ?>">Tin Tức</a>
+                            </li>
+                            <li class="sub__menu__mobile">
+                                <a class="menu__title__mobile" href="<?php echo base_url('tra-cuu-ve/'); ?>">Tra Cứu</a>
                             </li>
                         </ul>
                     </div>
