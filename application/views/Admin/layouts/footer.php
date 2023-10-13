@@ -1,3 +1,18 @@
+<style type="text/css">
+    .card{
+        background-color: white;
+    }
+
+    .vertical-menu{
+        background: #1d3a85;
+    }
+    #sidebar-menu ul li a{
+        color: #a7a7a7;
+    }
+    .navbar-header{
+        background: white;
+    }
+</style>
 <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
