@@ -42,6 +42,26 @@
 					<div class="info-left">Ngày Quay Về</div>
 					<div class="info-right"><?php echo date("d-m-Y", strtotime($detail[0]['GioQuayVe'])); ?></div>
 				</li>
+				<li class="ifkh">
+					<div class="info-left">Trạng Thái</div>
+					<div class="info-right">
+						<?php 
+							if($detail[0]['status'] == 1){
+								echo "Đang chờ duyệt vé!";
+							}else if($detail[0]['status'] == 2){
+								echo "Đã duyệt vé";
+							}else if($detail[0]['status'] == 3){
+								echo "Đang chuyển bị vé";
+							}else if($detail[0]['status'] == 4){
+								echo "Đã gửi vé cho KH";
+							}else if($detail[0]['status'] == -1){
+								echo "Đã gửi hủy vé";
+							}else{
+								echo "Vé bị xóa khỏi hệ thống";
+							}
+						?>
+					</div>
+				</li>
 				<li class="ifkh"></li>
 			</ul>
 		</div>

@@ -22,7 +22,7 @@ class Model_TrangChu extends CI_Model {
 	}
 
 	public function resultViewTicket($MaTimKiem){
-		$sql = "SELECT datve.*, chuyendi.* FROM datve, chuyendi WHERE datve.MaChuyenDi = chuyendi.MaChuyenDi AND datve.MaTimKiem = ?";
+		$sql = "SELECT datve.*, chuyendi.*, datve.TrangThai AS status FROM datve, chuyendi WHERE datve.MaChuyenDi = chuyendi.MaChuyenDi AND datve.MaTimKiem = ?";
 		$result = $this->db->query($sql, array($MaTimKiem));
 		return $result->result_array();
 	}
